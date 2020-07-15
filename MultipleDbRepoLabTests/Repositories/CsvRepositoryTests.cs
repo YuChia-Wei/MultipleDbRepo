@@ -8,12 +8,12 @@ namespace MultipleDbRepoLabTests.Repositories
     [TestClass]
     public class CsvRepositoryTests
     {
-        private IRepository<DataEntity> _repository;
+        private IRepository<Data> _repository;
 
         [TestInitialize]
         public void SetUp()
         {
-            _repository = new CsvRepository<DataEntity>(@"D:\MOCK_DATA.csv");
+            _repository = new CsvRepository<Data>(@"D:\MOCK_DATA.csv");
         }
 
         [TestMethod]

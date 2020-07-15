@@ -3,7 +3,7 @@
     /// <summary>
     /// db 資料實體 
     /// </summary>
-    public class DataEntity
+    public class Data
     {
         /// <summary>
         ///     方法代號

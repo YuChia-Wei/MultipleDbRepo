@@ -7,9 +7,9 @@ namespace MultipleDbRepoLab.Services.Implements
     /// </summary>
     public class DataService
     {
-        private readonly IRepository<DataEntity> _repository;
+        private readonly IRepository<Data> _repository;
 
-        public DataService(IRepository<DataEntity> repository)
+        public DataService(IRepository<Data> repository)
         {
             _repository = repository;
         }
@@ -19,7 +19,7 @@ namespace MultipleDbRepoLab.Services.Implements
         /// </summary>
         /// <param name="stockTran"></param>
         /// <returns></returns>
-        public (bool result, string message) Cancel(DataEntity stockTran)
+        public (bool result, string message) Cancel(Data stockTran)
         {
             return _repository.Delete(stockTran);
         }
@@ -29,7 +29,7 @@ namespace MultipleDbRepoLab.Services.Implements
         /// </summary>
         /// <param name="stockTranDocument"></param>
         /// <returns></returns>
-        public (bool result, string message) Create(DataEntity stockTranDocument)
+        public (bool result, string message) Create(Data stockTranDocument)
         {
             return _repository.Create(stockTranDocument);
         }
@@ -39,7 +39,7 @@ namespace MultipleDbRepoLab.Services.Implements
         /// </summary>
         /// <param name="stockTranDocument"></param>
         /// <returns></returns>
-        public (bool result, string message) Update(DataEntity stockTranDocument)
+        public (bool result, string message) Update(Data stockTranDocument)
         {
             return _repository.Update(stockTranDocument);
         }
