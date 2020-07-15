@@ -17,8 +17,11 @@ namespace MultipleDbRepoLabTests.Repositories
         }
 
         [TestMethod]
-        public void MethodCallTest_Calculating_Only_Out()
+        public void FindCvsData_ProductCode_is_Dodge()
         {
+            var dataEntity = _repository.GetSingle(d => d.ProductCode == "Dodge");
+
+            Assert.AreEqual(dataEntity.ProductCode, "Dodge");
         }
     }
 }

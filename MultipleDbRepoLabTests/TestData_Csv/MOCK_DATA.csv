@@ -1,4 +1,4 @@
-MethodCode,IndividuallySet,ProductCode,ByLocationId,ByLotId
+MethodCode,IndividuallySet,ProductCode,ByLocationId,ByLotNumber
 FirstInFirstOut,false,Hyundai,true,false
 MovingAverage,true,Ford,false,false
 MovingAverage,true,Lincoln,true,true
